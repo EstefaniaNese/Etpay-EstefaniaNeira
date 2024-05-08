@@ -1,12 +1,24 @@
-import './App.css'
+import { Navbar } from "../src/components/Nabvar/Navbar";
+import { Hero } from "../src/sections/Hero/Hero";
+import { Features } from "../src/sections/Features/Features";
+import { Integrations } from "../src/sections/Integrations/Integrations";
+import { Footer } from "../src/components/Footer/Footer";
 
-function App() {
+const Home = () => {
 
   return (
     <>
-    <p>REGIM</p>
+    <header>
+      <Navbar />
+    </header>
+      <main>
+        <Hero />
+        <Features />
+        <Integrations />
+      </main>
+      <Footer />
     </>
   )
 }
 
-export default App
+export default Home;
